@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+/* src/styles.scss */
+@import 'assets/Styles/fonts/fonts.scss';
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* other global styles */
+}
+.white{
+    color: #fff !important;
+}
+.f-18{
+    font-size: 18px;
+}
+.f-20{
+    font-size: 20px;
+}
+.f-40{
+    font-size: 40px;
+    font-weight: bold;
+}
