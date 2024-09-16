@@ -1,0 +1,62 @@
+
+.contact-title{
+    font-size:50px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+    .contact-title{
+        font-size:30px;
+        margin-top: 20px;
+    }
+}
+.container {
+    max-width: 75vw;
+    margin: auto;
+  }
+  
+  .label{
+    color: #fff;
+  }
+  .submit-btn{
+    text-align: center;
+  }
+  .input-field{
+    --tw-bg-opacity: 1;
+    background-color: rgb(10 10 10 / var(--tw-bg-opacity));
+    border: 1px solid #494949;
+    color: #fff;
+  }
+  ::placeholder {
+    color: rgb(126, 126, 127);
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: rgb(126, 126, 127);
+  }
+  .submit-btn{
+    text-align: center;
+  }
+  .contact{
+    display: flex;
+    align-items: center;
+  }
+  .form-container{
+    width: -webkit-fill-available;
+    width: 50%;
+    margin-right: 50px;
+  }
+  .reachout{
+    color: #fff;
+  }
+  .email-link{
+    font-size: 30px;
+    color: #004cae;
+  }
+  .email-cont{
+    margin-top: -15px;
+  }

@@ -1,0 +1,43 @@
+<div class="container mt-5">
+    <h2 class="contact-title">Interested in working together with me?</h2>
+    <div class="contact">
+
+    
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="form-container">
+      <div class="mb-3">
+        <label for="name" class="form-label label">Name</label>
+        <input type="text" id="name" class="form-control input-field" formControlName="name" placeholder="Enter your name" />
+        <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="text-danger">
+          Name is required.
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label for="email" class="form-label label">Email</label>
+        <input type="email" id="email" class="form-control input-field" formControlName="email" placeholder="Enter your email" />
+        <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="text-danger">
+          Enter a valid email.
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label for="message" class="form-label label">Message</label>
+        <textarea id="message" class="form-control input-field" rows="4" formControlName="message" placeholder="Enter your message"></textarea>
+        <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="text-danger">
+          Message is required.
+        </div>
+      </div>
+  <div class="submit-btn">
+      <button type="submit" class="btn btn-primary" style="background: #004cae;" [disabled]="contactForm.invalid">Submit</button>
+    </div>
+    </form>
+    <div class="email-cont">
+        <h1 style="color: #fff;">Or</h1>
+        <p class="reachout">Feel free to reach out if you have a question or just want to connect.</p>
+        <a href="mailto:rehan.khadir1@gmail.com" class="email-link">
+            rehan.khadir1&#64;gmail.com
+          </a>
+    </div>
+</div>
+  </div>
+  

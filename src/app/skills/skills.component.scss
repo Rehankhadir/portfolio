@@ -1,0 +1,103 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    /* other global styles */
+}
+.skills-title{
+    font-size:50px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 30px;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .skills-title{
+        font-size:30px;
+        margin-top: 20px;
+    }
+}
+
+.htmlImage{
+    height: 70px;
+    width: 70px;
+}
+.cssImage{
+    height: 90px;
+    width:  90px;
+}
+.jsImage{
+    height: 80px;
+    width: 80px;
+}
+.skill-card{
+    // height: 200px;
+    width: 220px;
+    border-radius:12px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    // border-color: hsla(0, 0%, 100%, .2);
+    border: 1px solid hsla(0, 0%, 100%, .2);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding:12px;
+    background: transparent;
+    height: 170px;
+}
+
+.card {
+    box-sizing: border-box;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    margin: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    .card{
+        margin: 10px;
+      }
+  }
+  
+  .htmlcard:hover {
+    border: 1px solid rgb(108 13 13);
+        transform: scale(1.05);
+  }
+  .csscard:hover {
+    border: 1px solid rgb(27 12 127);
+    transform: scale(1.05);
+  }
+  .jscard:hover {
+    border: 1px solid rgb(219 203 34 / 54%);
+    transform: scale(1.05);
+  }
+  .angcard:hover {
+    border: 1px solid rgba(224, 53, 53, 0.54);
+    transform: scale(1.05);
+  }
+  .bscard:hover {
+    border: 1px solid rgba(168, 28, 244, 0.54);
+    transform: scale(1.05);
+  }
+  
+  .card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+  .skills-container{
+    justify-content: center;
+    width: 75%;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  @media screen and (max-width: 768px) {
+    .skills-container{
+        width: 100%;
+      }
+  }
+  .skills{
+    display: flex;
+    justify-content: center;
+  }

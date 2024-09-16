@@ -20,3 +20,9 @@ body {
     font-size: 40px;
     font-weight: bold;
 }
+@media only screen and (max-width: 768px) {
+    .f-40{
+        font-size: 22px;
+        font-weight: bold;
+    }
+}

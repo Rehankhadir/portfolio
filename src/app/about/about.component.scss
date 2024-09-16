@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
+* {
+    box-sizing: border-box;
+  }
 
 .animate {
   border-right: solid 3px rgba(0,255,0,.75);
@@ -8,27 +11,66 @@
   overflow: hidden;    
   font-family: 'Source Code Pro', monospace;  
   color: rgba(255,255,255,.70);
-}
-
-/* Animation */
-.animate {
-  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+//   display: inline-block;
+animation: animated-text 4s steps(29,end) 1s 1 normal both,
              animated-cursor 600ms steps(29,end) infinite;
 }
+@media only screen and (max-width: 768px) {
+    .animate {
+      white-space: normal; /* Allow wrapping on smaller screens */
+      animation: animated-text 3s steps(20, end) 1s 1 normal both,
+                 animated-cursor 500ms steps(20, end) infinite;
+    }
+  }
 
-/* text animation */
+/* Animation */
+// .animate {
+//   animation: animated-text 4s steps(29,end) 1s 1 normal both,
+//              animated-cursor 600ms steps(29,end) infinite;
+// }
 
-@keyframes animated-text{
-  from{width: 0;}
-  to{width:650px;}
-}
+/* text animation
+
+/* Text animation */
+@keyframes animated-text {
+    from { width: 0; }
+    to { width:650px; }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    @keyframes animated-text {
+      from { width: 0; }
+      to { width: 300px; } /* Adjust width to fit mobile screens */
+    }
+  }
+
 
 /* cursor animations */
-
-@keyframes animated-cursor{
-  from{border-right-color: rgba(0,255,0,.75);}
-  to{border-right-color: transparent;}
+@keyframes animated-cursor {
+    from { border-right-color: rgba(0, 255, 0, .75); }
+    to { border-right-color: transparent; }
+  }
+.cv-btn{
+    background-color:rgba(0,255,0,.75);
+    color: #000;
+    font-weight: 500;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 15px;
+    margin: 5px;
 }
-  
-
-  
+.cv-btn:hover,
+.contactme-btn:hover{
+    background-color:#fff;
+    color: #000;
+    font-weight: 500;
+}
+.contactme-btn{
+    background-color: transparent;
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    border-radius: 15px;
+    margin: 5px;
+}
