@@ -4,13 +4,19 @@
 * {
     box-sizing: border-box;
   }
-
+  .mobile-view{
+    display: none;
+  }
+  .desktop-view{
+    display: block;
+  }
 .animate {
   border-right: solid 3px rgba(0,255,0,.75);
   white-space: nowrap;
   overflow: hidden;    
   font-family: 'Source Code Pro', monospace;  
   color: rgba(255,255,255,.70);
+  max-width: fit-content;
 //   display: inline-block;
 animation: animated-text 4s steps(29,end) 1s 1 normal both,
              animated-cursor 600ms steps(29,end) infinite;
@@ -20,28 +26,28 @@ animation: animated-text 4s steps(29,end) 1s 1 normal both,
       white-space: normal; /* Allow wrapping on smaller screens */
       animation: animated-text 3s steps(20, end) 1s 1 normal both,
                  animated-cursor 500ms steps(20, end) infinite;
+                //  display: contents;
+    }
+    .mobile-view{
+      display: block;
+    }
+    .desktop-view{
+      display: none;
     }
   }
 
-/* Animation */
-// .animate {
-//   animation: animated-text 4s steps(29,end) 1s 1 normal both,
-//              animated-cursor 600ms steps(29,end) infinite;
-// }
 
-/* text animation
-
-/* Text animation */
 @keyframes animated-text {
     from { width: 0; }
-    to { width:650px; }
+    to { width:100%; }
   }
   
   @media only screen and (max-width: 768px) {
     @keyframes animated-text {
       from { width: 0; }
-      to { width: 300px; } /* Adjust width to fit mobile screens */
+      to { width: 100%; }
     }
+    
   }
 
 
