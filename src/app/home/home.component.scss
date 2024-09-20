@@ -68,7 +68,6 @@
     color:#004caea1; 
   }
 
-  /* From Uiverse.io by cybrejon */ 
 .download-btn {
     color: rgba(255, 255, 255, 0.692);
     padding: 10px 15px;
@@ -120,6 +119,13 @@
     position: relative;
     transition-duration: .3s;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
+   
+  }
+  @media screen and (max-width: 768px) {
+    .Btn{
+      margin: 0.5rem 1.2rem !important;
+    }
+    
   }
   
   .svgIcon {
