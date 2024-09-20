@@ -101,3 +101,14 @@ body {
     display: flex;
     justify-content: center;
   }
+  .text-stack-p{
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .text-stack-p{
+      font-size: 16px;
+    }
+  }

@@ -1,15 +1,22 @@
-<div style="min-height: 80vh; display: flex; justify-content: center;align-items: center; flex-direction:column">
+<div style="min-height: 80vh; display: flex; justify-content: center;align-items: center; flex-direction:column;margin-top: 20px;margin-bottom: 20px;">
     <div style="display: flex; flex-direction: column;align-items: center;width: 80%;">
         <h1 class="white f-20">Hello, I'm Rehan, A Passionate</h1>
-        <h1 class="white f-40 animate desktop-view" >Front-End Angular <span style="color:rgba(0,255,0,.75);">Developer</span></h1>
+        <!-- <h1 class="glitch" >Front-End Angular Developer</h1> -->
+        <h1 class="white f-40 animate desktop-view" >Front-End Angular <span style="color:#004cae;">Developer</span></h1>
         <h1 class="white f-40 animate mobile-view">Front-End Angular </h1>
-        <h1 class="white f-40 animate mobile-view"><span style="color:rgba(0,255,0,.75);">Developer</span></h1>
-        <p class="f-18 mt-5" style="    color: #8c8c8c !important;">With a deep passion for crafting <span style="color:rgba(0,255,0,.75);">dynamic and responsive web applications</span>, I specialize in leveraging the power of Angular to build seamless user experiences. My journey in web development has been fueled by a love for clean, maintainable code and an obsession with the latest in front-end technology.
+        <h1 class="white f-40 animate mobile-view"><span style="color:#004cae;">Developer</span></h1>
+        <p class="f-18 mt-5" style="    color: #8c8c8c !important;">With a deep passion for crafting <span style="color:#004cae;">dynamic and responsive web applications</span>, I specialize in leveraging the power of Angular to build seamless user experiences. My journey in web development has been fueled by a love for clean, maintainable code and an obsession with the latest in front-end technology.
 
             Whether I'm transforming complex requirements into intuitive interfaces or optimizing performance to ensure smooth user interactions, I approach every project with creativity, precision, and a commitment to excellence. Let's build something amazing together!</p>
     </div>
     <div>
-        <button class="cv-btn">Download CV</button>
-        <button class="contactme-btn">Contact Me</button>
+        <a href="../../assets/resume.pdf" target="_blank">
+            <button class="cv-btn">Download CV</button>
+          </a>
+          <button class="contactme-btn" routerLink="/contact">Contact Me</button>
+        <!-- <a href="../../assets/resume.pdf" download="resume.pdf">
+            <button class="download-btn">Download CV</button>
+          </a> -->
+          
     </div>
 </div>

@@ -75,8 +75,9 @@
     color: #fff;
   }
   .email-link{
-    font-size: 30px;
+    font-size: 22px;
     color: #004cae;
+    display: block;
   }
   .email-cont{
     margin-top: -15px;
@@ -94,4 +95,11 @@
       .email-link{
         font-size: 20px;
       }
+  }
+  .contact-address-label{
+    color: #fff;
+    font-weight: bold;
+  }
+  .contact-address-val{
+    color: #fff;
   }
